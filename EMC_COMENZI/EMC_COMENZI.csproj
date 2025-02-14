@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{69E14B3D-7D31-4D51-B3FE-6698F202D657}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EMC_COMENZI</RootNamespace>
+    <AssemblyName>EMC_COMENZI</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EMC_COMENZIDataSet.cs">
+      <DependentUpon>EMC_COMENZIDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EMC_COMENZIDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EMC_COMENZIDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormClientiLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClientiLista.Designer.cs">
+      <DependentUpon>FormClientiLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClientiOperatii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClientiOperatii.Designer.cs">
+      <DependentUpon>FormClientiOperatii.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormComenziCreare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormComenziCreare.Designer.cs">
+      <DependentUpon>FormComenziCreare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormComenziDetaliu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormComenziDetaliu.Designer.cs">
+      <DependentUpon>FormComenziDetaliu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormComenziLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormComenziLista.Designer.cs">
+      <DependentUpon>FormComenziLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormComenziOperatii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormComenziOperatii.Designer.cs">
+      <DependentUpon>FormComenziOperatii.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrincipal.Designer.cs">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProduseLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProduseLista.Designer.cs">
+      <DependentUpon>FormProduseLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProduseOperatii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProduseOperatii.Designer.cs">
+      <DependentUpon>FormProduseOperatii.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormClientiLista.resx">
+      <DependentUpon>FormClientiLista.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClientiOperatii.resx">
+      <DependentUpon>FormClientiOperatii.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormComenziCreare.resx">
+      <DependentUpon>FormComenziCreare.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormComenziDetaliu.resx">
+      <DependentUpon>FormComenziDetaliu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormComenziLista.resx">
+      <DependentUpon>FormComenziLista.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormComenziOperatii.resx">
+      <DependentUpon>FormComenziOperatii.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProduseLista.resx">
+      <DependentUpon>FormProduseLista.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProduseOperatii.resx">
+      <DependentUpon>FormProduseOperatii.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="EMC_COMENZIDataSet.xsc">
+      <DependentUpon>EMC_COMENZIDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EMC_COMENZIDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EMC_COMENZIDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EMC_COMENZIDataSet.xss">
+      <DependentUpon>EMC_COMENZIDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Utils.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
